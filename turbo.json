@@ -1,0 +1,60 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env*"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**"
+      ]
+    },
+    "lib:build": {
+      "dependsOn": []
+    },
+    "lint": {
+      "dependsOn": [
+        "^lint"
+      ]
+    },
+    "docker:up": {
+      "dependsOn": [],
+      "cache": false
+    },
+    "docker:down": {
+      "dependsOn": [],
+      "cache": false
+    },
+    "check-types": {
+      "dependsOn": [
+        "^check-types"
+      ]
+    },
+    "dev": {
+      "dependsOn": [
+        "^lib:build"
+      ]
+    },
+    "prod": {
+      "dependsOn": []
+    },
+    "//#prettier": {
+      "dependsOn": [],
+      "outputs": []
+    },
+    "deploy": {
+      "dependsOn": [
+        "build",
+        "test",
+        "prettier"
+      ],
+      "outputs": []
+    }
+  }
+}

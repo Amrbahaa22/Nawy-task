@@ -1,0 +1,43 @@
+{
+  "name": "@amr-bahaa/apartment-website-client",
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "lib:build": "npm run lib:build --workspace=@core/lib",
+    "prettier": "prettier \"{apps,packages}/**/*.{json,html,css,sass,scss}\" --write --ignore-unknown",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "build": "turbo build",
+    "dev": "turbo dev --parallel --no-cache",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@types/multer": "^1.4.12",
+    "prettier": "^3.4.2",
+    "turbo": "^2.3.3",
+    "typescript": "5.5.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.{json,html,css,sass,scss}": [
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.9.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@package/eslint-config": "*",
+    "axios": "^1.7.9",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10"
+  }
+}

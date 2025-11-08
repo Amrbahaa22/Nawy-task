@@ -1,0 +1,82 @@
+services:
+  server:
+    container_name: apartment_server
+    image: apartment-server
+    build:
+      context: .
+      dockerfile: ./apps/server/Dockerfile
+      target: runner
+    ports:
+      - '8000:8000'
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - .env
+    networks:
+      - node-network
+    depends_on:
+      mongodb:
+        condition: service_healthy
+
+  client:
+    container_name: apartment_client
+    image: apartment-client
+    build:
+      context: .
+      dockerfile: apps/client/Dockerfile
+      target: runner
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_DOMAIN=http://server:8000/v1
+    depends_on:
+        - server
+    env_file:
+      - .env
+    networks:
+      - node-network
+
+
+  mongodb:
+    container_name: apartment_mongodb
+    image: mongo:latest
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongoadminsusr
+      MONGO_INITDB_ROOT_PASSWORD: mongoadminpassword
+      MONGO_INITDB_DATABASE: mydb
+    ports:
+      - '27017:27017'
+    networks:
+      - node-network
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  mongo_db_admin:
+    container_name: apartment_mongo_admin
+    image: mongo-express:latest
+    restart: unless-stopped
+    ports:
+      - '8081:8081'
+    environment:
+      - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
+      - ME_CONFIG_MONGODB_AUTH_USERNAME=mongoadminsusr
+      - ME_CONFIG_MONGODB_AUTH_PASSWORD=mongoadminpassword
+      - ME_CONFIG_MONGODB_URL=mongodb://mongoadminsusr:mongoadminpassword@mongodb:27017/mydb?ssl=false&authSource=admin&directConnection=true
+    networks:
+      - node-network
+    depends_on:
+      - mongodb
+
+networks:
+  node-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:

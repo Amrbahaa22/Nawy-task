@@ -1,0 +1,253 @@
+[
+    {
+        "id": "1",
+        "title": "Boston Commons Retreat",
+        "description": "This is a beautiful apartment located near the commons. It is a 2 bedroom apartment with a full kitchen and bathroom. It is available for weekly or monthly rentals.",
+        "type": "Apartment",
+        "price": 1500,
+        "rooms": 2,
+        "baths": 1,
+        "area": 1500,
+        "amenities": [
+            "Wifi",
+            "Full kitchen",
+            "Washer & Dryer",
+            "Free Parking",
+            "Hot Tub",
+            "24/7 Security",
+            "Wheelchair Accessible",
+            "Elevator Access",
+            "Dishwasher",
+            "Gym/Fitness Center",
+            "Air Conditioning",
+            "Balcony/Patio",
+            "Smart TV",
+            "Coffee Maker"
+        ],
+        "furnishingStatus": "not furnished",
+        "images": [
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835797/file_ytiplx.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835786/file_gf3sfo.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835785/file_wdoz5s.jpg"
+        ]
+    },
+    {
+        "id": "2",
+        "title": "Cozy Downtown Loft",
+        "description": "A cozy downtown loft with great city views.",
+        "type": "Apartment",
+        "price": 1000,
+        "rooms": 1,
+        "baths": 1,
+        "area": 1800,
+        "amenities": [
+            "Wifi",
+            "Full kitchen",
+            "Washer & Dryer",
+            "Free Parking",
+            "Hot Tub",
+            "24/7 Security",
+            "Wheelchair Accessible",
+            "Elevator Access",
+            "Dishwasher",
+            "High-Speed Internet",
+            "Air Conditioning",
+            "Smart TV",
+            "Outdoor Grill/BBQ"
+        ],
+        "images": [
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835797/file_ytiplx.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835786/file_gf3sfo.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835785/file_wdoz5s.jpg"
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Luxury Condo with a View",
+        "description": "Experience luxury in this stunning condo with breathtaking views.",
+        "type": "Condo",
+        "price": 3300,
+        "rooms": 3,
+        "baths": 2,
+        "area": 2200,
+        "furnishingStatus": "furnished",
+        "amenities": [
+            "Wifi",
+            "Full kitchen",
+            "Washer & Dryer",
+            "Free Parking",
+            "Hot Tub",
+            "24/7 Security",
+            "Wheelchair Accessible",
+            "Elevator Access",
+            "Dishwasher",
+            "Swimming Pool",
+            "Gym/Fitness Center",
+            "Air Conditioning",
+            "Smart TV",
+            "Coffee Maker"
+        ],
+        "images": [
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835797/file_ytiplx.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835786/file_gf3sfo.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835785/file_wdoz5s.jpg"
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Charming Cottage Getaway",
+        "description": "Escape to this charming cottage for a peaceful retreat.",
+        "type": "Cottage Or Cabin",
+        "price": 2000,
+        "rooms": 1,
+        "baths": 1,
+        "area": 900,
+        "furnishingStatus": "furnished",
+        "amenities": [
+            "Fireplace",
+            "Outdoor Grill/BBQ",
+            "Balcony/Patio",
+            "Coffee Maker"
+        ],
+        "images": [
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835797/file_ytiplx.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835786/file_gf3sfo.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835785/file_wdoz5s.jpg"
+        ]
+    },
+    {
+        "id": "5",
+        "title": "Modern Downtown Studio",
+        "description": "Stay in style in this modern downtown studio apartment.",
+        "type": "Studio",
+        "price": 1100,
+        "rooms": 1,
+        "baths": 1,
+        "area": 900,
+        "furnishingStatus": "not furnished",
+        "amenities": [
+            "High-Speed Internet",
+            "Smart TV",
+            "Air Conditioning",
+            "Gym/Fitness Center",
+            "Outdoor Grill/BBQ"
+        ],
+        "images": [
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835797/file_ytiplx.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835786/file_gf3sfo.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835785/file_wdoz5s.jpg"
+        ]
+    },
+    {
+        "id": "6",
+        "title": "Seaside Retreat",
+        "description": "Escape to this seaside house for a relaxing getaway.",
+        "type": "House",
+        "price": 2500,
+        "rooms": 4,
+        "baths": 3,
+        "area": 2800,
+        "amenities": [
+            "Beach Access",
+            "Swimming Pool",
+            "Balcony/Patio",
+            "Smart TV",
+            "Outdoor Grill/BBQ"
+        ],
+        "furnishingStatus": "furnished",
+        "images": [
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835797/file_ytiplx.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835786/file_gf3sfo.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835785/file_wdoz5s.jpg"
+        ]
+    },
+    {
+        "id": "7",
+        "title": "Rustic Cabin in the Woods",
+        "type": "Cottage Or Cabin",
+        "price": 2000,
+        "description": "Experience nature in this cozy rustic cabin.",
+        "rooms": 2,
+        "baths": 1,
+        "area": 1100,
+        "furnishingStatus": "not furnished",
+        "amenities": [
+            "Fireplace",
+            "Outdoor Grill/BBQ",
+            "Hiking Trails Access",
+            "Pet-Friendly"
+        ],
+        "images": [
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835797/file_ytiplx.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835786/file_gf3sfo.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835785/file_wdoz5s.jpg"
+        ]
+    },
+    {
+        "id": "8",
+        "title": "Ski-In/Ski-Out Chalet",
+        "type": "Chalet",
+        "description": "Hit the slopes from this cozy ski-in/ski-out chalet.",
+        "rooms": 3,
+        "baths": 2,
+        "area": 1800,
+        "furnishingStatus": "furnished",
+        "amenities": [
+            "Ski Equipment Storage",
+            "Fireplace",
+            "Balcony/Patio",
+            "Smart TV"
+        ],
+        "price": 1100,
+        "images": [
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835797/file_ytiplx.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835786/file_gf3sfo.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835785/file_wdoz5s.jpg"
+        ]
+    },
+    {
+        "id": "9",
+        "title": "Mountain View Retreat",
+        "type": "House",
+        "description": "Enjoy stunning mountain views from this spacious retreat.",
+        "rooms": 4,
+        "baths": 3,
+        "area": 2400,
+        "furnishingStatus": "not furnished",
+        "amenities": [
+            "Mountain View",
+            "Hiking Trails Access",
+            "Air Conditioning",
+            "Smart TV",
+            "Outdoor Grill/BBQ"
+        ],
+        "price": 3800,
+        "images": [
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835797/file_ytiplx.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835786/file_gf3sfo.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835785/file_wdoz5s.jpg"
+        ]
+    },
+    {
+        "id": "10",
+        "title": "Historic Downtown Loft",
+        "description": "Step back in time with a stay in this historic downtown loft.",
+        "type": "Apartment",
+        "price": 2100,
+        "rooms": 2,
+        "baths": 1,
+        "area": 1200,
+        "furnishingStatus": "furnished",
+        "amenities": [
+            "High-Speed Internet",
+            "Air Conditioning",
+            "Smart TV",
+            "Coffee Maker"
+        ],
+        "images": [
+           "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835797/file_ytiplx.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835786/file_gf3sfo.jpg",
+            "https://res.cloudinary.com/dyxpsaalp/image/upload/v1733835785/file_wdoz5s.jpg"
+        ]
+    }
+]
